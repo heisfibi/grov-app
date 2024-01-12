@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('./assets/fonts/Proxima_Nova_Font.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-background{
+  @apply bg-black
+}
+
+body {
+  font-family: 'Proxima', sans-serif;
+  @apply bg-background text-white
+}
+.container {
+  @apply w-full sm:w-[624px] md:w-[744px] lg:w-[940px] xl:w-[1137px] 2xl:w-[1137px]
+}
+
+.pre-container {
+  @apply flex justify-center
+}
+
+.main-screen {
+    @apply min-h-screen grow flex flex-col
+}
+
+.header{
+  @apply h-[60px] sticky top-0 z-50 bg-background
+}
+.bg-primary {
+  @apply !bg-[#FF2E2E]
+}
+.text-primary {
+  @apply !text-[#FF2E2E]
+}
+.border-primary {
+  @apply !border-[#FF2E2E]
+}
+.bottom-banner{
+  background-image: url('./assets/images/bottom-banner-wide.jpg');
+}
+
+.my-btn{
+  @apply duration-300 hover:scale-110
+}
+.hover\:bg-primary {
+  @apply hover:bg-[#FF2E2E]
 }
