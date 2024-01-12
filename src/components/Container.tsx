@@ -2,7 +2,7 @@ import React from 'react'
 
 function Container({children, preClassName, className, ...props}:
   {
-    children: React.ReactElement
+    children: React.ReactElement | React.ReactElement[]
     preClassName?: string
     className?: string
   }) {

@@ -67,11 +67,27 @@ function Home({ }: Props) {
                             </div>
                             <button className="border grow border-primary rounded-full whitespace-nowrap px-3 py-1 text-xs sm:text-base flex justify-center items-center">GROV uporablja model umetne inteligence GPT-4 | <img src={openAiLogo} /></button>
                         </div>
-                        <div className="grid sm:grid-cols-2 gap-9 sm:gap-10">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-9 sm:gap-10">
                             <LowerBox title="Visoka kvaliteta" src={lowerBoxImg1} />
                             <LowerBox title="Hitri in odzivni" src={lowerBoxImg2} />
                             <LowerBox title="Imamo prednost" src={lowerBoxImg3} />
                             <LowerBox title="Svetujemo" src={lowerBoxImg4} />
+                            <div className="border-2 border-white sm:min-w-[231px] sm:col-span-2 min-h-[166px] flex gap-6 justify-center items-center p-4 rounded-lg font-bold">
+                                <div className="sm:max-w-[648px] gap-6 items-center flex flex-col sm:flex-row sm:justify-between grow">
+                                    <div className="flex flex-col">
+                                        <span className="text-6xl font-bold text-primary">60</span>
+                                        <span className="text-xl w-[150px]">+Narejenih strani</span>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="text-6xl font-bold text-primary">1000</span>
+                                        <span className="text-xl w-[150px]">+Socialnih objav</span>
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="text-6xl font-bold text-primary">100</span>
+                                        <span className="text-xl w-[150px]">+Zadovoljnih strank</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,26 +97,6 @@ function Home({ }: Props) {
                     <BottomBanner src={bottomBannerImg1} placeholder="odpri" title="Talent Verse" />
                     <BottomBanner src={bottomBannerImg2} placeholder="odpri" title="AI Image" reverse />
                     <BottomBanner src={bottomBannerImg3} placeholder="odpri" title="One home" />
-                </div>
-            </Container>
-            <Container>
-                <div className="flex flex-col px-3">
-                    <div className="border-2 border-white min-w-[231px] min-h-[166px] flex gap-6 justify-center items-center p-4 rounded-lg font-bold">
-                        <div className="sm:max-w-[648px] lg:max-w-[943px] gap-6 items-center flex flex-col sm:flex-row sm:justify-between grow">
-                            <div className="flex flex-col">
-                                <span className="text-6xl font-bold text-primary">60</span>
-                                <span className="text-xl w-[150px]">+Narejenih strani</span>
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-6xl font-bold text-primary">1000</span>
-                                <span className="text-xl w-[150px]">+Socialnih objav</span>
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-6xl font-bold text-primary">100</span>
-                                <span className="text-xl w-[150px]">+Zadovoljnih strank</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </Container>
         </div>
@@ -115,7 +111,7 @@ const UpperBox = ({ title, src, to, placeholder }:
         to: string
     }) => {
     return (
-        <div className="border-2 border-white min-w-[231px] flex flex-col gap-6 justify-center items-center p-4 rounded-lg font-bold">
+        <div className="border-2 border-white sm:min-w-[231px] flex flex-col gap-6 justify-center items-center p-4 rounded-lg font-bold">
             <div className="p-4 rounded-full bg-primary shadow-lg shadow-[#FF2E2E]">
                 <img src={src} />
             </div>
@@ -134,7 +130,7 @@ const LowerBox = ({ title, src }:
         src: string
     }) => {
     return (
-        <div className="border-2 border-white min-w-[231px] flex flex-col gap-6 justify-center items-center p-4 py-6 rounded-lg font-bold">
+        <div className="border-2 border-white sm:min-w-[231px] flex flex-col gap-6 justify-center items-center p-4 py-6 rounded-lg font-bold">
             <div className="p-4 rounded-full bg-primary shadow-lg shadow-[#FF2E2E]">
                 <img src={src} />
             </div>

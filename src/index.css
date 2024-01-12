@@ -10,7 +10,7 @@
 }
 
 .bg-background{
-  @apply bg-black
+  @apply bg-[#0F0F0F]
 }
 
 body {
