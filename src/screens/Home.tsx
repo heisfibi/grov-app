@@ -31,10 +31,10 @@ function Home({ }: Props) {
         <div className="flex flex-col gap-16 sm:gap-24">
             <MobileHeader />
             <Container>
-                <div className='lg:h-[calc(742px-80px)] flex justify-center items-center'>
+                <div className='sm:h-[calc(100vh-80px)] flex justify-center items-center'>
                     <div className="flex flex-col sm:flex-row px-3 sm:px-0 justify-between sm:items-stretch items-center gap-9 sm:gap-6 sm:mt-6">
                         <div className="sm:w-1/2 flex flex-col gap-4">
-                            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-center sm:text-start">IDEJE V REALNOST Z <span className="text-primary">UMETNO INTELIGENCO</span></h1>
+                            <h1 className="text-5xl lg:text-7xl font-bold text-center sm:text-start">IDEJE V REALNOST Z <span className="text-primary">UMETNO INTELIGENCO</span></h1>
                             <div className="flex gap-6 w-full justify-center sm:justify-start">
                                 <Link to={"/kontakt"}>
                                     <div className="my-btn text-center px-3 w-[113px] py-2 rounded-lg text-black bg-white font-bold">Nov projekt</div>
